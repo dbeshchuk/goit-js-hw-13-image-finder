@@ -1,24 +1,24 @@
 {
-  "name": "goit-js-hw-10",
+  "name": "goit-js-hw-13-image-finder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://dbeshchuk.github.io/goit-js-hw-10",
+  "homepage": "https://dbeshchuk.github.io/goit-js-hw-13-image-finder",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-10/",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build --no-optimize"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dbeshchuk/goit-js-hw-10.git"
+    "url": "git+https://github.com/dbeshchuk/goit-js-hw-13-image-finder.git"
   },
   "keywords": [],
   "author": "Dmytro Beshchuk <dmytro.beshchuk@protonmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dbeshchuk/goit-js-hw-10/issues"
+    "url": "https://github.com/dbeshchuk/goit-js-hw-13-image-finder/issues"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
