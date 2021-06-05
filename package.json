@@ -1,0 +1,34 @@
+{
+  "name": "goit-js-hw-10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://dbeshchuk.github.io/goit-js-hw-10",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-10/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build --no-optimize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbeshchuk/goit-js-hw-10.git"
+  },
+  "keywords": [],
+  "author": "Dmytro Beshchuk <dmytro.beshchuk@protonmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbeshchuk/goit-js-hw-10/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
+  }
+}
