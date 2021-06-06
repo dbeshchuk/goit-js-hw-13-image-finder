@@ -23,7 +23,6 @@ searchBlock.addEventListener('submit', evt => {
     return;
   }
 
-  
   newApiService.fetchImages()
     .then(images => {
       if (images.hits.length == 0) {
@@ -32,26 +31,34 @@ searchBlock.addEventListener('submit', evt => {
       }
 
       imagesList.insertAdjacentHTML('beforeend', imagesListTpl(images));
-      
+
       if (images.hits.length > 11) {
         loadMoreBtn.classList.remove("hidden");
+      } else {
+        loadMoreBtn.classList.add("hidden");
       }
     });
 })
 
 loadMoreBtn.addEventListener('click', () => {
   newApiService.nextPage();
-  
+
   newApiService.fetchImages()
     .then(images => {
       imagesList.insertAdjacentHTML('beforeend', imagesListTpl(images));
+
+      if (images.hits.length > 11) {
+        loadMoreBtn.classList.remove("hidden");
+      } else {
+        loadMoreBtn.classList.add("hidden");
+      }
     })
     .then(() => {
-    const pageList = imagesList.querySelectorAll('li');
+      const pageList = imagesList.querySelectorAll('li');
 
-    pageList.item(pageList.length - 11).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+      pageList.item(pageList.length - 1).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     });
-  });
 })
