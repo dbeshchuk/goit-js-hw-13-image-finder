@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 
-.page {
+.gallery {
   display: flex;
   flex-wrap: wrap;
 }
@@ -27,7 +27,7 @@ li {
   margin: 0px;
 }
 
-.page img {
+img {
   width: 560px;
   margin-left: 10px;
 }
@@ -56,4 +56,8 @@ li {
 
 .match-error {
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }
